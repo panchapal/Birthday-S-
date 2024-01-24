@@ -1,0 +1,122 @@
+
+        body {
+          background-image: linear-gradient 
+          (135deg, #667eea 0%, #764ba2 100%);
+        }
+        #container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+        .book {
+          position: relative;
+          border-radius: 10px;
+          width: 210px;
+          height: 290px;
+          background-image: url("../img/WhatsApp\ Image\ 2024-01-24\ at\ 12.19.42_705ee382.jpg");
+          background-size: cover;
+          background-position: center;
+          background-size: 110%;
+          -webkit-box-shadow: 1px 1px 12px #72cef2;
+          box-shadow: 1px 1px 12px #eeaaf2;
+          -webkit-transform: preserve-3d;
+          -ms-transform: preserve-3d;
+          transform: preserve-3d;
+          -webkit-perspective: 2000px;
+          perspective: 2000px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+         }
+         .book h4{
+            position: absolute;
+            top: 2px;
+            left:100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            font-size: 18px;
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(247, 245, 246);
+            background:linear-gradient(rgb(44, 44, 221),rgb(234, 61, 133));
+            -webkit-background-clip: text;
+            background-repeat: no-repeat;
+            background-position: -150px 0;
+            animation: back-g 2s linear infinite alternate;
+            
+         }
+         @keyframes back-g{
+            100%{
+                background-position: 0 0;
+            }
+         }
+         .book .para{
+            padding-top: 140px;
+            margin-left: 18px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+         }
+        .cover {
+          top: 0;
+          position: absolute;
+          background-color: lightgray;
+          background-color: #4158D0;
+          background-image: url("../img/wp2920013.png");
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          cursor: pointer;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+          -webkit-transform-origin: 0;
+          -ms-transform-origin: 0;
+          transform-origin: 0;
+          -webkit-box-shadow: 1px 1px 12px #f29ec7;
+          box-shadow: 1px 1px 12px #8b87f5;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+        }
+        .cover h3{
+            position: absolute;
+            top: 148px;
+            left:30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(255, 255, 255);
+            background:linear-gradient(rgb(141, 240, 146),rgb(237, 97, 237));
+            -webkit-background-clip: text;
+            background-repeat: no-repeat;
+            background-position: -250px 0;
+            animation: back-g1 2s linear infinite alternate;
+        }
+        @keyframes back-g1{
+            100%{
+                background-position: 0 0;
+            }
+        }
+        .book:hover .cover {
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+          -webkit-transform: rotatey(-85deg);
+          -ms-transform: rotatey(-85deg);
+          transform: rotatey(-85deg);
+        }
